@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--CSS-->
+<style>
+.container {
+    background-color:grey;
+    background-image:url(https://imgtr.ee/image/Illusioncinema2.d6zMChttps://imgtr.ee/image/Pexels-pietro-jeng-65128.dF8Rm) ;
+}
+.header-top {
+    position: -webkit-sticky;
+    position: sticky;
+    
+}
+.button {
+  float: right;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:dimgray;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color:dimgray}
+
+.button:active {
+  background-color:lavender;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:lightslategray;
+  
+}
+
+li {
+  float: left;
+  width: 20%;
+  border-style: double;
+  border-width: 5px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:lightslategrey;
+}
+.head {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    margin: 0px;
+    float: right;
+}
+
+#search-input {
+    padding: 10px;
+    width: 900px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+#search-btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+#movie-container {
+    margin: 50px;
+}
+.video-container{ 
+  padding-left: 35%;
+}
+</style>
+
+<!--Basic-->
+<meta charset="utf-8">
+<meta meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+</html>
+<!--Header-->
+<header>
+<div class="container">
+    <div class="header-top">
+        <img src="https://imgtr.ee/images/2023/08/10/214ce569b325c24e7665f3b8d3f68dc4.png" alt="illusioncinema" style="display: block; top: 60px; width: 200px; height: 123px;">
+</div>
+<div class="container">
+    <div class="header-middle">
+     <ul>
+        <li><a class="active" a href="#Event.html">Event</a></li>
+        <li><a href="#Ticketing.html">Ticketing</a></li>
+        <li><a href="#Contact Us.html">Contact Us</a></li>
+        <li><a href="#About Us.html">About Us</a></li>
+     <button class="button" a href="#LoginPage.html">Membership Login</button></ul>
+     </ul>   
+    </div>
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for a movie...">
+      <button id="search-btn">Search</button>
+   </div>
+    <div id="movie-container">
+ <!-- Movie info will be dynamically inserted here -->
+      </div>
+    <script src="script.js"></script>     
+</div>
+</div>
+</header>
+<main>
+  <Table width="100%" border="4">
+    <TR>
+      <TH>Night</TH>
+      <TH>Card</TH>
+    </TR>
+    <TR>
+      <TD><img src="https://imgtr.ee/images/2023/08/10/d587b914d4f60ecbb6b77dd8a2b4be1c.png" alt="Night" a href="#" border="0">
+      <TD><img src="https://imgtr.ee/images/2023/08/10/eddce2737176b1db5e96d95c5c522df4.png" alt="Card" a href="#" border="0" style="width: 504px;height: 350px">
+      </TR>
+    <TR>
+     <TH>Great StarSword</TH>
+     <TH>Time</TH>
+    </TR>
+    <TR>
+      <TD><img src="https://imgtr.ee/images/2023/08/10/58dd3aa2919432be17a86177932f2c43.png" alt="Great StarSword" a href="#" border="0">
+      <TD><img src="https://imgtr.ee/images/2023/08/10/d0f35e33b473c050e6dc1a7a8d852818.png" alt="Time" a href="#" border="0">
+    </TR>
+    <TR>
+     <TH>Grave</TH>
+     <TH>Castle on the Moon</TH>
+    </TR>
+    <TR>
+    <TD><img src="https://imgtr.ee/images/2023/08/10/dcbaaba9b7e53391196381b3726d12f3.png" alt="Grave" a href="#" border="0">
+    <TD><img src="https://imgtr.ee/images/2023/08/10/fe69dbe3575e29d8b1189f930404048a.png" alt="Castle on the Moon" a href="#" border="0" style="width: 504px; height: 504px;">
+    </TR>
+  </Table>
+  <div class="video-container"><video src="" controls width="500"></video></div>
+</main>
+<footer>
+<table width="100%" border="5">
+  <tr>
+    <td><img src="https://imgtr.ee/images/2023/08/10/3fc45f695fef569692d3fbfa197da7c2.png" alt="3fc45f695fef569692d3fbfa197da7c2.png" border="0" width="100%" a href="#1st annivesary.html"></td>
+  </tr>
+</table>
+<h1>Sitemap</h1>
+<table width="100%" border="6">
+  <colgroup>
+    <col class="split">
+    <col class="split">
+  </colgroup>
+  <tr>
+   <td>
+     <section id="Movies">
+      <h1>Movies</h1>
+      </section>
+      </td>
+      <td>
+     <section id="Events">
+     <h1>Events</h1>
+     </section>
+     </td>
+     <td>
+     <section id="MemberLogin">
+     <h1>MemberLogin</h1>
+     </section>
+     </td>
+     <td>
+     <section id="About Us">
+      <h1>About Us</h1>
+</section>
+</td>
+</footer>

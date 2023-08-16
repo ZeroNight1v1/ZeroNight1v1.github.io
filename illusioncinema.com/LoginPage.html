@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>Member Login</Title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px 0;
+}
+
+.top-header {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.bottom-header {
+    background-color: #f2f2f2;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #fff;
+}
+.login-button { 
+    margin-left: auto;  
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #333;
+}
+
+.head {
+    font-family: Arial, sans-serif;
+}
+
+        .login span.sub-title {
+    color: #333;
+        }
+        .sub-title {
+    margin-top: 18px;
+    font: 700 18px/26px "Roboto Condensed", sans-serif,'Microsoft JhengHei';
+    color: lightsalmon;
+    letter-spacing: .5px;
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+  width: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4CAF50;
+}
+
+.input-group button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #45a049;
+}
+
+.message {
+  text-align: center;
+}
+
+.message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+        <header class="top-header">
+            <div class="container">
+                <div class="logo">
+            <img src="https://imgtr.ee/images/2023/08/10/214ce569b325c24e7665f3b8d3f68dc4.png" alt="illusioncinema" style="display: block; top: 60px; width: 200px; height: 123px;">
+    </div>
+    </div>
+    </header>
+        <header class="bottom-header">
+            <div class="container">
+            <nav>
+         <ul>
+            <li><a href="#Event.html">Event</a></li>
+            <li><a href="#Ticketing.html">Ticketing</a></li>
+            <li><a href="#Schedule.html">Schedule</a></li>
+            <li><a href="#Contact Us.html">Contact Us</a></li>
+            <li><a href="#About Us.html">About Us</a></li>
+         <li class="login-button"><a href="#LoginPage.html">Member Login</button></a>
+        </li>
+        </ul>
+        </nav>
+            <script>
+                const loginButton = document.getElementById('member-login');
+    
+    // Add additional styles or modify existing styles
+    loginButton.style.fontWeight = 'bold';
+    loginButton.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.5)';
+    
+    // Add event listener for hover effect
+    loginButton.addEventListener('mouseover', function() {
+        loginButton.style.backgroundColor = '#333';
+    });
+    
+    loginButton.addEventListener('mouseout', function() {
+        loginButton.style.backgroundColor = '#555';
+    });
+            </script>
+         </ul>  
+         </nav> 
+        </div>
+        </header>
+    </body>
+    <main>
+    <div class="Login-Container">
+        <h1>Member Login</h1>
+            <form id="loginForm">
+              <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+              </div>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+              </div>
+              <div class="input-group">
+                <button type="submit">Login</button>
+              </div>
+            </form>
+            <p class="message">Not a Member? <a href="Registration.html">Create an account</a></p>
+          </div>
+          <script>
+            const validUsername = "Admin01";
+            const validPassword = "826094";
+
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get input values
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Perform validation (dummy validation example)
+  if (username === "Admin01" && password === "826094") {
+    alert("Login successful!");
+    // Redirect to a new page or perform other actions
+    window.location.href = "https://example.com";
+  } else {
+    alert("Invalid username or password.");
+  }
+});
+          </script>
+</main>
+</html>
